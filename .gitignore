@@ -1,31 +1,71 @@
-# Environment variables
+# =========================
+# 🔐 ENV & SECRETS
+# =========================
 .env
 .env.*
+*.env
 
-# Python cache
+# =========================
+# 🐍 PYTHON CACHE
+# =========================
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Virtual environments
+# =========================
+# 📦 VIRTUAL ENVIRONMENT
+# =========================
+.venv/
 venv/
 env/
-.venv/
 
-# Testing
+# =========================
+# 🧪 TESTING & COVERAGE
+# =========================
+.pytest_cache/
 .coverage
 htmlcov/
-.pytest_cache/
 
-# IDE files
+# =========================
+# 🧠 IDE / EDITOR FILES
+# =========================
 .vscode/
 .idea/
+*.swp
+*.swo
 
-# OS files
+# =========================
+# 🖥️ OS FILES
+# =========================
 .DS_Store
 Thumbs.db
 
-# Logs
+# =========================
+# 📄 LOGS & TEMP FILES
+# =========================
 *.log
 *.tmp
+
+# =========================
+# 🗄️ DATABASE FILES (local)
+# =========================
+*.sqlite3
+
+# =========================
+# 📦 BUILD FILES
+# =========================
+dist/
+build/
+*.egg-info/
+
+# =========================
+# 🔑 SECRET KEYS / CERTS
+# =========================
+*.pem
+*.key
+
+# =========================
+# ⚡ FASTAPI / UVICORN
+# =========================
+*.db
