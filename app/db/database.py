@@ -1,8 +1,8 @@
-from pymongo import MongoClient
-from app.core.config import MONGO_URL, DB_NAME
+from motor.motor_asyncio import AsyncIOMotorClient
+from app.core.config import settings
 
-client = MongoClient(MONGO_URL)
-db = client[DB_NAME]
+client = AsyncIOMotorClient(settings.MONGO_URL)
+db = client[settings.DB_NAME]
 
 users_collection = db["users"]
 challenges_collection = db["challenges"]
