@@ -6,23 +6,32 @@ from app.core.security import hash_password, verify_password, create_access_toke
 router = APIRouter(prefix="/auth")
 
 @router.post("/register")
-def register(user: UserCreate):
-    if users_collection.find_one({"email": user.email}):
+async def register(user: UserCreate):
+
+    existing_user = await users_collection.find_one({"email": user.email})
+
+    if existing_user:
         raise HTTPException(400, "User already exists")
 
-    users_collection.insert_one({
+    await users_collection.insert_one({
         "email": user.email,
-        "password": hash_password(user.password)
+        "password": hash_password(user.password),
+        "role": "user"
     })
 
     return {"message": "User registered"}
 
 @router.post("/login")
-def login(user: UserLogin):
-    db_user = users_collection.find_one({"email": user.email})
+async def login(user: UserLogin):
+
+    db_user = await users_collection.find_one({"email": user.email})
 
     if not db_user or not verify_password(user.password, db_user["password"]):
         raise HTTPException(401, "Invalid credentials")
 
-    token = create_access_token({"user_id": str(db_user["_id"])})
+    token = create_access_token({
+        "user_id": str(db_user["_id"]),
+        "role": db_user["role"]
+    })
+
     return {"access_token": token}
