@@ -23,3 +23,13 @@
 
 <img width="1335" height="952" alt="image" src="https://github.com/user-attachments/assets/d1b07ec6-175f-4713-a651-8eafcaf5a3d9" />
 <img width="1306" height="371" alt="image" src="https://github.com/user-attachments/assets/38ccc401-3238-44ce-8f05-7a8558319b36" />
+
+# Join challenge
+----------------
+<img width="1051" height="318" alt="image" src="https://github.com/user-attachments/assets/dea829dd-4900-43e7-b231-e5a48c2cf4d9" />
+<img width="1354" height="710" alt="image" src="https://github.com/user-attachments/assets/f493dd54-d6e2-4d53-81b8-13c25c393867" />
+
+
+
+# Progress challenge
+----------------------
