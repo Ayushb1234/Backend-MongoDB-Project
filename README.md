@@ -34,3 +34,9 @@
 
 # Progress challenge
 ----------------------
+
+<img width="1265" height="954" alt="image" src="https://github.com/user-attachments/assets/85907334-8a42-45ff-a6a0-fffee7cd185e" />
+<img width="1045" height="375" alt="image" src="https://github.com/user-attachments/assets/201e4868-2ffe-4789-8e62-21c56a27323a" />
+<img width="1904" height="630" alt="image" src="https://github.com/user-attachments/assets/b0adce3d-1e30-4935-89af-91eab0710ea9" />
+
+
