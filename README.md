@@ -173,25 +173,25 @@ uvicorn app.main:app --reload
 
 ---
 
-# ⚠️ Common Mistakes Faced (Important Learning)
-
+# Challenegs I have faced making during This:
+---------------------------------------------
 During development, several real-world issues were encountered:
 
-### 1. ❌ JWT Misuse in Swagger
+### 1. JWT Misuse in Swagger
 
 * Mistake: Added `"Bearer Bearer <token>"`
 * Fix: Only paste raw token in Swagger
 
 ---
 
-### 2. ❌ Putting Token in URL
+### 2. Putting Token in URL
 
 * Mistake: Token was passed as `challenge_id`
 * Fix: Token must be in Authorization header
 
 ---
 
-### 3. ❌ MongoDB Connection Errors
+### 3. MongoDB Connection Errors
 
 * Issue: SSL handshake / connection failed
 * Fix:
@@ -201,7 +201,7 @@ During development, several real-world issues were encountered:
 
 ---
 
-### 4. ❌ Async vs Sync MongoDB Calls
+### 4. Async vs Sync MongoDB Calls
 
 * Mistake: Used `find_one()` without `await`
 * Fix: Use async Motor methods:
@@ -212,21 +212,21 @@ During development, several real-world issues were encountered:
 
 ---
 
-### 5. ❌ Data Type Mismatch
+### 5. Data Type Mismatch
 
 * Issue: `ObjectId` vs string mismatch
 * Fix: Store and query consistently as strings
 
 ---
 
-### 6. ❌ Incorrect Field Names
+### 6. Incorrect Field Names
 
 * Mistake: `"progress value"` instead of `progress_value`
 * Fix: Follow exact schema naming
 
 ---
 
-### 7. ❌ Extra Quotes Bug (Critical)
+### 7. Extra Quotes Bug (Critical)
 
 * Stored:
 
@@ -237,7 +237,7 @@ During development, several real-world issues were encountered:
 
 ---
 
-### 8. ❌ bcrypt Password Limit Error
+### 8. bcrypt Password Limit Error
 
 * Error: Password > 72 bytes
 * Fix: Truncate password:
@@ -257,22 +257,8 @@ During development, several real-world issues were encountered:
 
 ---
 
-# 🚀 Future Improvements
-
-* Leaderboard system
-* Daily streak tracking
-* Role-based access (admin/user)
-* Rate limiting
-* Refresh tokens
-
----
-
-# 👨‍💻 Author
-
-**Ayush**
-Backend Developer | AI/ML Enthusiast
-
----
+# Full Working WOrkflow of this Project
+--------------------------------------------
 
 
 # Register users
